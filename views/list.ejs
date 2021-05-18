@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="box" id="heading">
+    <h1><%= kindofaday %></h1>
+  </div>
+
+  <div class="box">
+    <% newLists.forEach(function(lists){ %>
+      <form action="/delete" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%=lists._id%>" onChange="this.form.submit()" >
+          <p><%= lists.name %></p>
+        </div>
+        <input type="hidden" name="listName" value="<%= kindofaday %>">
+      </form>
+    <% })%>
+  </div>
+  <div class="box">
+    <form action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item">
+      <button type="submit" name="button" value="<%= kindofaday %>">+</button>
+
+    </form>
+
+
+  </div>
+
+</body>
+
+</html>
