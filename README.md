@@ -11,4 +11,6 @@ we can create different todo list for different names like like for individual d
 <p>
 we can also add new list and delete the items in the list that we have completed
 </p>
-![Screenshot (135)](https://user-images.githubusercontent.com/60296760/118593130-01ccb800-b75c-11eb-8110-3a228e1b1408.png)
+
+![Screenshot (135)](https://user-images.githubusercontent.com/60296760/118593199-21fc7700-b75c-11eb-8950-ab1bba0d2b58.png)
+
